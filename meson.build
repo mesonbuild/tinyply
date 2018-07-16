@@ -6,7 +6,7 @@ pkg = import('pkgconfig')
 
 i = include_directories('source')
 tinyply_lib = library('tinyply', 'source/tinyply.cpp',
-		      install: true)
+                      install: true)
 install_headers('source/tinyply.h')
 tinyply_dep = declare_dependency(include_directories: i,
     link_with: tinyply_lib)
